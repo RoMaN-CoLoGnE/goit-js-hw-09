@@ -4,6 +4,11 @@ import 'flatpickr/dist/flatpickr.min.css';
 
 import Notiflix from 'notiflix';
 
+Notiflix.Notify.init({
+  position: 'center-bottom',
+  distance: '100px',
+});
+
 const daysRef = document.querySelector('[data-days]');
 const hoursRef = document.querySelector('[data-hours]');
 const minutesRef = document.querySelector('[data-minutes]');
@@ -36,6 +41,7 @@ function onBtnStartClick(evt) {
 }
 
 const options = {
+  position: 'center center',
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),

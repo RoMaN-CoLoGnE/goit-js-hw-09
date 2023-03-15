@@ -1,5 +1,10 @@
 import Notiflix from 'notiflix';
 
+Notiflix.Notify.init({
+  position: 'center-bottom',
+  distance: '100px',
+});
+
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
   return new Promise((resolve, reject) => {
