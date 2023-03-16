@@ -37,6 +37,9 @@ function onFormSubmit(evt) {
         Notiflix.Notify.failure(
           `❌ Rejected promise ${position} in ${delay}ms`
         );
+      })
+      .finally(() => {
+        formRef.reset();
       });
     delay += step;
   }
