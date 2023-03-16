@@ -5,14 +5,15 @@
   flex-direction: column;
   gap: 30px;
 
-  height: 100%;
+  height: auto;
 }
 
 .input {
+  display: block;
   border-radius: 5px;
   text-align: center;
   font-weight: 500;
-  background-color: rgb(201, 196, 196);
+  background-color: rgb(255, 255, 255);
 }
 
 .timer {

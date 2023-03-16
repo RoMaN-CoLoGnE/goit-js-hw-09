@@ -2,7 +2,6 @@
   height: 100%;
 }
 .input-wrapper {
-  padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
   justify-content: space-around;
@@ -14,5 +13,6 @@
 }
 
 .btn-promises {
+  display: block;
   margin: 0 auto;
 }

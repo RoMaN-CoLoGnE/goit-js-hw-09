@@ -1,45 +1,75 @@
-.btn-start {
+.btn-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 15px 30px;
-  height: 50px;
-  border-radius: 5px;
-  border: 1px solid rgb(7, 60, 7);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: rgb(0, 0, 0);
-  background-color: rgb(116, 212, 97);
+  gap: 20px;
 }
 
-.btn-stop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 30px;
-  height: 50px;
-  border-radius: 5px;
-  border: 1px solid rgb(60, 7, 7);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: rgb(0, 0, 0);
-  background-color: rgb(209, 124, 124);
+.btn-start {
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #0cab1c 51%,
+    #9eefe1 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.btn-start:hover {
+  background-position: right center;
 }
 
 .btn-start[disabled] {
-  background-color: rgb(198, 195, 195);
+  background-image: linear-gradient(
+    to right,
+    #c8d3d1 0%,
+    #595d5a 51%,
+    #c8d3d1 100%
+  );
+  background-position: 0;
 }
 
-.btn-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  height: 100%;
+.btn-stop {
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #eec2c2 0%,
+    #df4826 51%,
+    #eec2c2 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.btn-stop:hover {
+  background-position: right center;
 }
 
 .btn-stop[disabled] {
-  background-color: rgb(198, 195, 195);
+  background-image: linear-gradient(
+    to right,
+    #c8d3d1 0%,
+    #595d5a 51%,
+    #c8d3d1 100%
+  );
+  background-position: 0;
 }

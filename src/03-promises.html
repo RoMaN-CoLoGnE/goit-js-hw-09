@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <div class="link-wrapper">
-      <p><a class="link" href="./02-timer.html">Go back</a></p>
-      <p><a class="link" href="index.html">Go home</a></p>
-    </div>
-
-    <form class="form">
-      <div class="input-wrapper">
-        <label class="label">
-          First delay (ms)
-          <input class="input" type="number" name="delay" required />
-        </label>
-        <label class="label">
-          Delay step (ms)
-          <input class="input" type="number" name="step" required />
-        </label>
-        <label class="label">
-          Amount
-          <input class="input" type="number" name="amount" required />
-        </label>
+    <div class="container">
+      <div class="link-wrapper">
+        <p><a class="link" href="./02-timer.html">Go back</a></p>
+        <p><a class="link" href="index.html">Go home</a></p>
       </div>
-      <button class="btn-start btn-promises" type="submit">
-        Create promises
-      </button>
-    </form>
+
+      <form class="form">
+        <div class="input-wrapper">
+          <label class="label">
+            First delay (ms)
+            <input class="input" type="number" name="delay" required />
+          </label>
+          <label class="label">
+            Delay step (ms)
+            <input class="input" type="number" name="step" required />
+          </label>
+          <label class="label">
+            Amount
+            <input class="input" type="number" name="amount" required />
+          </label>
+        </div>
+        <button class="btn-start btn-promises" type="submit">
+          Create promises
+        </button>
+      </form>
+    </div>
 
     <script src="js/03-promises.js" type="module"></script>
   </body>
