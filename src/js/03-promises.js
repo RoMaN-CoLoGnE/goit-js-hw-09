@@ -3,6 +3,7 @@ import Notiflix from 'notiflix';
 Notiflix.Notify.init({
   position: 'center-top',
   distance: '100px',
+  backOverlay: true,
 });
 
 function createPromise(position, delay) {
