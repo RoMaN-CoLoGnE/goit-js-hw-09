@@ -56,6 +56,8 @@ flatpickr(inputRef, options);
 function validateDate(date) {
   if (date <= Date.now()) {
     Notiflix.Notify.failure('Please choose a date in the future');
+    btnStartRef.disabled = true;
+    selectDate = null;
   } else {
     btnStartRef.disabled = false;
     selectDate = date;
